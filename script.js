@@ -1,12 +1,12 @@
 function makeid(l) {
   // write your code here
 	var res="";
-	var characters="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*(){}[]|<>?/.,=-";
+	var charList="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
 
-	for(let i=0;i<l;i++){
-		res+=characters.charAt(
+	for(var i=0;i<l;i++){
+		res+=charList.charAt(
 			Math.floor(
-				Math.random()*characters.length;
+				Math.random()*charList.length
 			)
 		)
 	}
@@ -16,4 +16,6 @@ function makeid(l) {
 // Do not change the code below.
 const l = prompt("Enter a number.");
 alert(makeid(l));
+
+
 
